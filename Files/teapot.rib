@@ -1,1 +1,100 @@
+# Main Teapot Body
+AttributeBegin
+#	Opacity 0.5 0.5 0.5
+	Rotate -90 1 0 0
+	AttributeBegin
+		Cylinder 0.61 0.8 0.85 360
+		Sphere 1.0 0 0.8 360
+		Disk 0.885 0.61 360
+		Torus 1.0 0.015 -180 90 360
+	AttributeEnd
+	AttributeBegin
+		Translate 0 0 0.86
+		Torus 0.61 .025 -90 90 360
+	AttributeEnd
+	AttributeBegin
+		ReverseOrientation
+		Disk 0 1 360
+	AttributeEnd
+AttributeEnd
 
+	
+# Teapot Lid
+AttributeBegin
+	Rotate -90 1 0 0
+	AttributeBegin
+		Translate 0 0 0.05
+		AttributeBegin
+			Translate 0 0 0.92
+			ReverseOrientation
+			Torus 0.15 0.05 180 270 360
+		AttributeEnd
+		AttributeBegin
+			Cylinder 0.1 0.92 1 360
+		AttributeEnd
+	AttributeEnd
+	AttributeBegin
+		Disk 0.92 0.3 360
+		Cylinder 0.31 0.885 0.91 360
+		Disk 1.05 .175 360
+		Disk 1.13 .175 360
+	AttributeEnd
+	AttributeBegin
+		Translate 0 0 0.91
+		Torus 0.3 0.01 0 90 360
+	AttributeEnd
+	AttributeBegin
+		Translate 0 0 1.09
+		Torus 0.175 0.04 -90 90 360
+	AttributeEnd
+AttributeEnd
+
+
+	
+# Teapot Spout
+AttributeBegin
+	Translate 0.90 0.4 0
+	Rotate -90 1 0 0
+	Rotate 66 0 1 0
+	AttributeBegin
+		Scale 0.15 0.15 0.15
+		AttributeBegin
+			Hyperboloid 1 0 0   0.7 0 3   360
+			Torus 1 0.1 -90 120 360
+			AttributeBegin
+				ReverseOrientation
+				Hyperboloid 0.92 0 0   0.62 0 3   360
+			AttributeEnd
+			AttributeBegin
+				Translate 0 0 3
+				Torus 0.66 0.04 0 180 360
+			AttributeEnd
+		AttributeEnd
+	AttributeEnd
+AttributeEnd
+
+
+#Teapot Handle
+AttributeBegin
+	AttributeBegin
+		Translate -0.80 .39 0
+		Rotate 90 1 0 0
+		Rotate 64 0 1 0	
+		Rotate -90 1 0 0
+		AttributeBegin
+			Torus .38 0.04 0 360 180
+		AttributeEnd
+	AttributeEnd
+	AttributeBegin
+		Rotate -9 0 0 1
+		Translate -1.00 -0.085 0
+		Rotate 90 0 1 0
+		Torus 0.04 0.01 0 360 360
+	AttributeEnd
+	AttributeBegin
+		Rotate -39 0 0 1
+		Translate -0.99 0.16 0
+		Rotate 90 0 1 0
+		Torus 0.04 0.01 0 360 360
+	AttributeEnd
+AttributeEnd

@@ -1,0 +1,36 @@
+#asg3 scene rib
+Display "asg3scene.tiff" "framebuffer" "rgb"
+Projection "perspective" "fov" [ 30 ]
+Exposure 1.0 3.0
+
+Translate 0 -0.5 4.5
+
+WorldBegin
+   
+   LightSource "pointlight" 1
+      "from" [-0.5 0.2 -1]
+      "intensity" [ 0.03 ]
+      
+   LightSource "pointlight" 2
+      "from" [0.5 0.2 -1]
+      "intensity" [ 0.03 ]
+      
+   LightSource "pointlight" 3
+      "from" [0 2 0]
+      "intensity" [ 1.5 ]
+   
+   AttributeBegin
+      Surface "asg3shader" 
+              "float u_roughness" [0.9] 
+              "float v_roughness" [0.4] 
+              "color specularcolor" [1 0 1]
+#      Color [ 0 1 0 ]
+      Rotate -20 1 0 0
+      Rotate 0 0 0 1
+      ReadArchive "teapot.rib"
+   AttributeEnd
+           
+WorldEnd
+
+
+
