@@ -1,2 +1,3 @@
 # Ward-Anisotropic-BRDF-Implementation
 This project implements the Ward Anisotropic BRDF.
+This project involves the implementation of the Ward Anisotropic Bidirectional Reflectance Distribution Function (BRDF). The Ward model uses a 2D Gaussian function to map the angle between the halfway vector and the surface directions {u} and {v} . This mapping determines the fraction of light reflected from the surface based on the viewing and lighting angles relative to the surface normal . The shader supports roughness parameters in the {u} and {v} directions, allowing for the simulation of anisotropic surface reflections.   Ward-Anisotropic-BRDF-Implementation
